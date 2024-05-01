@@ -1,0 +1,43 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import '../styles/tailwind.css';
+import 'animate.css';
+const { title } = Astro.props;
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{Astro.props.title}</title>
+	</head>
+	<body class="pt-4 px-4">
+
+		<header class="container max-w-2xl mx-auto pt-8">
+			<Header></Header>
+		</header>
+		
+		<main class="container max-w-2xl mx-auto pt-8">
+			<slot />
+		</main>
+
+		<footer class="container max-w-2xl mx-auto pt-8">
+			<Footer></Footer>
+		</footer>
+
+		<div class="flex flex-row justify-end mt-8 stefanpopperop">
+			<img src="detergodt.png" alt="thumbs up, siger Stefan">
+		</div>
+			
+	</body>
+</html>
+<script>
+	import { inView } from "motion";
+
+	const stefanpopperop = document.querySelector(".stefanpopperop");
+	inView(stefanpopperop, () => {
+		stefanpopperop.classList.add("animate__animated", "animate__bounceInDown", "animate__delay-1s");
+	});	
+</script>
