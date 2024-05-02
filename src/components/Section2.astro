@@ -1,0 +1,39 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+
+import Workshop from "../assets/images/workshop.jpg";
+import Audition from "../assets/images/audition.jpg";
+
+
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+    <div class="border-2 border-black p-4">
+        <h3 class="py-3 lg:text-4xl">Movement Workshop</h3>
+        <Image src={Workshop} alt="Workshop" class="w-max" />
+        <div class="py-3">
+        <span class="text[#382E30]">Søndag 21. april 2024</span>
+        <p class="leading pt-1 text-[#382E30] lg:text-sm text-xs">Timothy De Mesa Højgaard har en flot karriere bag sig. Han har stået på mange kommercielle scener, har optrådt i adskillige TV-programmer og er nu aktuel i forestillingen “Askepot The Musical”.</p>
+        </div>
+    </div>
+    <div class="border-2 border-black p-4 md:col-start-2 md:col-span-1 md:row-span-2 text-center">
+        <h2 class="py-3 lg:text-6xl text-xl">Undervisere</h2>
+        <video>
+            <source src="src/assets/video/undervisere.mp4" type="video/mp4">
+        </video>
+        <div class="py-3">
+        <span class="text[#382E30]" class="font-bold">Mød vores stjernespækkede underviserteam på Dansestudiet! </span>
+        <p class="leading pt-1 text-[#382E30] lg:text-sm text-xs"> Med ekspertise i forskellige dansegenrer og passion for dans skaber de en unik atmosfære, der passer til alle niveauer.</p>
+        </div>
+    </div>
+
+    <div class="border-2 border-black p-4">
+        <h3 class="py-3 lg:text-4xl">Audition DSDU</h3>
+        <Image src={Audition} alt="Workshop" class="w-max" />
+        <div class="py-3">
+            <span class="text[#382E30]">Lørdag 15. juni 2024 </span>
+            <p class="leading pt-1 text-[#382E30] lg:text-sm text-xs">Er du klar til at tage din passion for dans til næste niveau? Der er åben for ansøgninger til Dansestudiets 1-årige danseuddannelse 2024/25.</p>
+        </div>
+    </div>
+</div>
