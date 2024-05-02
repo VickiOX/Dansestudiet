@@ -13,31 +13,20 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
 	</head>
-	<body class="pt-4 px-4">
+	<body class="">
 
-		<header class="container max-w-2xl mx-auto pt-8">
+		<header class="">
 			<Header></Header>
 		</header>
 		
-		<main class="container max-w-2xl mx-auto pt-8">
+		<main class="">
 			<slot />
 		</main>
 
-		<footer class="container max-w-2xl mx-auto pt-8">
+		<footer class="">
 			<Footer></Footer>
 		</footer>
 
-		<div class="flex flex-row justify-end mt-8 stefanpopperop">
-			<img src="detergodt.png" alt="thumbs up, siger Stefan">
-		</div>
 			
 	</body>
 </html>
-<script>
-	import { inView } from "motion";
-
-	const stefanpopperop = document.querySelector(".stefanpopperop");
-	inView(stefanpopperop, () => {
-		stefanpopperop.classList.add("animate__animated", "animate__bounceInDown", "animate__delay-1s");
-	});	
-</script>
