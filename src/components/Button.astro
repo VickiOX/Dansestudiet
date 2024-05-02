@@ -1,41 +1,7 @@
 ---
-
-const { variant = "primary", size = "medium" } = Astro.props;
-
-const buttonStyling = "text-black ";
-
-const variantClasses = {
-  primary:
-    "bg-[#FF3859] text-[#FFF] hover:bg-white hover:text-white hover:border-2 px-4 py-1 rounded-full transition duration-100 ease-in-out border-2 border-[#ff1054]",
-
-  secondary:
-    "bg-[#ff1054] text-white hover:bg-white hover:text-[#ff1054] hover:border-2 px-3 py-2 rounded-full transition duration-100 ease-in-out border-2 border-[#ff1054]",
-
-  tertiary:
-    "bg-none text-white hover:bg-[#ff1054] hover:text-white hover:border-2 px-3 py-2 rounded-full transition duration-100 ease-in-out border-2 border-white",
-
-  quaternary:
-    "bg-trans text-[#1E293B] hover:bg-white hover:text-[#ff1054] hover:border-2 px-3 py-2 rounded-full transition duration-100 ease-in-out border-2 border-[#1E293B] hover:border-[#ff1054]",
-
-  rounded:
-    "bg-[#ff1054] text-white hover:bg-white hover:text-[#ff1054] hover:border-2 px-4 py-4 lg:px-[34px]  lg:py-[35px] rounded-full transition duration-100 ease-in-out border-2 border-[#ff1054] ",
-
-  rounded2:
-    "bg-[#ff1054] text-white hover:bg-white hover:text-[#ff1054] hover:border-2 px-5 py-4 lg:px-[38px]  lg:py-[32px] rounded-full transition duration-100 ease-in-out border-2 border-[#ff1054]",
-
-  støtOs:
-    "bg-[#ff1054] text-white hover:bg-white hover:text-[#ff1054] hover:border-2 px-20 py-2 md:px-18 lg:px-28 lg:py-2 rounded-full transition duration-100 ease-in-out border-2 border-[#ff1054]",
-};
-
-const sizeClasses = {
-  large: "py-6 text-[36px] lg:px-16 lg:text-xl lg:z-50",
-  medium: "px-8 text-md",
-  small: "p-8 text-sm",
-};
 ---
-
-<button
-  class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}
->
-  <slot />
-</button>
+<div x-data>
+    <button class="border-2 border-black p-2 rounded-md 
+    animate__animated animate__heartBeat animate__infinite" 
+    x-on:click="alert('Godt gået - god arbejdslyst:-)')"><slot /></button>
+</div>
