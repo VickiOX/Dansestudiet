@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter-Regular.ttf);
+}
+
+p {
+    font-family: Inter;
+}
+
+h1, h2, h3, span, figcaption {
+    font-family: Raleway;    
+}
+
+h1 {
+    /* font-size: 96px; */
+}
+
+h2 {
+    color: #FF3859;
+}
+
+h3 {
+    color: #D10023;
+}
+
+img, video {
+    transition: opacity 0.3s ease;
+}
+
+img:hover, video:hover {
+    opacity: 0.9;
+}

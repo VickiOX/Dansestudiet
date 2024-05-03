@@ -5,43 +5,44 @@ import Audition from "../assets/images/audition.jpg";
 import Button from "../components/Button.astro";
 ---
 
-<section class=" pt-4 px-4 mx-auto lg:px-36">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-10 p-4">
-        <div class="lg:pt-5">
-            <h3 class="text-[#d10023] text-Raleway py-3 lg:text-4xl text-xl">Movement Workshop</h3>
-            <Image src={Workshop} alt="Workshop" class="w-max" />
+<section class="lg:px-48 lg:pt-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-2 p-5">
+        <div class="lg:pt-3.5">
+            <h3 class="py-3 lg:text-2xl text-xl">Movement Workshop</h3>
+            <Image src={Workshop}  class="w-max" alt="Workshop" />
             <div class="py-3">
-            <span class="text[#382E30] text-Raleway font-bold">Søndag 21. april 2024</span>
-            <p class="leading-5 pt-1 text-[#382E30] lg:text-sm text-xs">Timothy De Mesa Højgaard har en flot karriere bag sig. Han har stået på mange kommercielle scener, har optrådt i adskillige TV-programmer og er nu aktuel i forestillingen <i>“Askepot The Musical”</i>.</p>
+            <span class="text[#382E30] font-bold lg:text-lg">Søndag 21. april 2024</span>
+            <p class="leading-5 lg:leading-6 pt-1 text-[#382E30] lg:text-sm text-xs">Timothy De Mesa Højgaard har en flot karriere bag sig. Han har stået på mange kommercielle scener, har optrådt i adskillige TV-programmer og er nu aktuel i forestillingen <i>“Askepot The Musical”</i>.</p>
             </div>
-            <div id="button" class="flex justify-end">
+            <div id="button" class="flex justify-end py-5">
                 <Button variant="secondary" size="small">Læs mere</Button>
             </div>            
         </div>
-        <div class=" md:col-start-2 md:col-span-1 md:row-span-2 text-center">
-            
-            <h2 class="text-Raleway text-[#FF3859] py-3 lg:text-6xl text-2xl">Undervisere</h2>
+
+        <div class="md:col-start-2 md:col-span-1 md:row-span-2 text-center">
+            <h2 class="py-3 lg:text-3xl text-2xl">Undervisere</h2>
             <div class="md:w-3/4 mx-auto">
                 <video class="w-full" muted autoplay loop>
                     <source src="src/assets/video/undervisere.mp4" type="video/mp4">
                 </video>
-
             <div class="py-3">
-            <span class="text[#382E30] text-Raleway font-bold">Mød vores stjernespækkede underviserteam på Dansestudiet! </span>
-            <p class="leading-5 pt-1 text-[#382E30] lg:text-sm text-xs"> Med ekspertise i forskellige dansegenrer og passion for dans skaber de en unik atmosfære, der passer til alle niveauer.</p>
+            <span class="text[#382E30] font-bold lg:text-lg">Mød vores stjernespækkede underviserteam på Dansestudiet! </span>
+            <p class="leading-5 lg:leading-6 py-2 text-[#382E30] lg:text-sm text-xs"> Med ekspertise i forskellige dansegenrer og passion for dans skaber de en unik atmosfære, der passer til alle niveauer.</p>
             </div>
-            <div id="button" class="flex justify-center py-2">
-                <Button variant="primary" size="small">Læs mere</Button>
-            </div>  
+            <div id="button" class="flex justify-center py-4">
+                <a href="https://www.figma.com/proto/i7aRsxJaidiKFJrXn2Qude/Dansestudiet?type=design&node-id=74-354&scaling=scale-down&page-id=26%3A6&starting-point-node-id=171%3A2712" target="_blank">
+                    <Button variant="primary" size="small">Læs mere</Button>
+                </a>
+            </div>            
             </div>
         </div>
     
-        <div class="">
-            <h3 class="py-3 text-[#d10023] text-Raleway lg:text-4xl text-xl">Audition DSDU</h3>
-            <Image src={Audition} alt="Workshop" class="w-max" />
+        <div class="pt-10 lg:pt-0">
+            <h3 class="py-3 lg:text-2xl text-xl">Audition DSDU</h3>
+            <Image src={Audition} class="w-max" alt="Workshop" />
             <div class="py-3">
-                <span class="text[#382E30] text-Raleway font-bold">Lørdag 15. juni 2024 </span>
-                <p class="leading-5 pt-1 text-[#382E30] lg:text-sm text-xs">Er du klar til at tage din passion for dans til næste niveau? Der er åben for ansøgninger til Dansestudiets 1-årige danseuddannelse 2024/25.</p>
+                <span class="text[#382E30] font-bold lg:text-lg">Lørdag 15. juni 2024 </span>
+                <p class="leading-5 lg:leading-6 pt-1 text-[#382E30] lg:text-sm text-xs">Er du klar til at tage din passion for dans til næste niveau? Der er åben for ansøgninger til Dansestudiets 1-årige danseuddannelse 2024/25.</p>
             </div>
             <div id="button" class="flex justify-end py-2">
                 <Button variant="secondary" size="small">Læs mere</Button>
